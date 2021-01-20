@@ -138,7 +138,7 @@ const objMerged = {
 
 console.log(objMerged);*/
 
-const obj = {
+/*const obj = {
     test: 123,
     subObj: {
         test: 123
@@ -150,4 +150,126 @@ const obj2 = {...obj, subObj: {...obj.subObj}};
 
 obj2.subObj.test = 456;
 
-console.log(obj);
+console.log(obj);*/
+
+/*----------------------------------------------------------*/
+
+var arr = ['Apple' , 'Banana' , 'Orange', ['Tomato']];
+
+var apple = arr[0];
+var banana = arr[1];
+var orange = arr[2];
+var tomato = arr[3][0];
+
+///************Destructuring Assignment */
+
+//Ex1
+/*var [apple2, banana2, orange2, [tomato2]] = ['Apple' , 'Banana' , 'Orange', ["Tomato"]]; // Padrão de destruir o array
+
+console.log(tomato, tomato2);*/
+
+///************Destructuring Assignment */
+//Ex2
+
+/*var arr = ['Apple', 'Orange'];
+var obj = {
+    name: 'Celso'
+};
+
+// Destructuring Assignment
+
+//var { name } = obj;
+var [apple2] = arr;
+var { name: name2 } = obj;
+
+name2 = 'Henrique';
+
+console.log(obj);*/
+
+
+///************Destructuring Assignment */
+//Ex3
+
+/*var arr = ['Apple', 'Orange'];
+var obj = {
+    name: 'Celso',
+    props: {
+        age: 26
+    }
+};
+
+var age = obj.props.age;
+
+// Destructuring Assignment
+
+//var { name } = obj;
+var [apple2] = arr;
+var { 
+    props: { age: age2 } } 
+    = obj;
+
+console.log(age);*/
+
+
+///************Destructuring Assignment */
+//Ex4
+
+/*var arr = ['Apple', 'Orange'];
+var obj = {
+    name: 'Celso',
+    props: {
+        age: 26,
+        favoriteColors: ['black', 'blue']
+    }
+};
+
+var age = obj.props.age;
+var color1 = obj.props.favoriteColors[0];
+
+// Destructuring Assignment / Arrays
+
+//var { name } = obj;
+var [apple2] = arr;
+var { 
+    props: {
+         age: age2, 
+         favoriteColors: [color1, color2] } } 
+    = obj;
+
+console.log(color1);*/
+
+///************Destructuring Assignment */
+//Ex5
+
+var arr = [{name:'Apple', type: 'fruit'}];
+var obj = {
+    name: 'Celso',
+    props: {
+        age: 26,
+        favoriteColors: ['black', 'blue']
+    }
+};
+
+var fruit1 = arr[0].name;
+
+// Destructuring Assignment / Objetos
+
+let [{ name: fruitName }] = arr;
+
+// Functions
+
+/*function sum(arr) {
+    return arr[0] + arr[1];
+}
+
+console.log(sum([5,5]));*/
+
+/*function sum([a, b] = [0,0]) {
+    return a + b;
+}*/
+
+function sum({a, b}) {
+    return a + b;
+}
+
+console.log(sum({ a: 5, b: 5}));
