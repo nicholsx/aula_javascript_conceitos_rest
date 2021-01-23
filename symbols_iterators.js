@@ -60,7 +60,7 @@ console.log(it.next());*/
 // *********** Generators ************/////////
 // Generators são funções com pausas
 
-const uniqueId = Symbol('Hello');
+/*const uniqueId = Symbol('Hello');
 
 Symbol.iterator;
 
@@ -86,9 +86,9 @@ for (let value of obj) {
         yield number;
         number++;
     }
-}
+}*/
 
-const it = naturalNumbers();
+/*const it = naturalNumbers();
 
 console.log(it.next());
 console.log(it.next());
