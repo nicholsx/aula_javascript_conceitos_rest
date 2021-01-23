@@ -154,12 +154,12 @@ console.log(obj);*/
 
 /*----------------------------------------------------------*/
 
-var arr = ['Apple' , 'Banana' , 'Orange', ['Tomato']];
+/*var arr = ['Apple' , 'Banana' , 'Orange', ['Tomato']];
 
 var apple = arr[0];
 var banana = arr[1];
 var orange = arr[2];
-var tomato = arr[3][0];
+var tomato = arr[3][0];*/
 
 ///************Destructuring Assignment */
 
@@ -241,7 +241,7 @@ console.log(color1);*/
 ///************Destructuring Assignment */
 //Ex5
 
-var arr = [{name:'Apple', type: 'fruit'}];
+/*var arr = [{name:'Apple', type: 'fruit'}];
 var obj = {
     name: 'Celso',
     props: {
@@ -250,11 +250,11 @@ var obj = {
     }
 };
 
-var fruit1 = arr[0].name;
+var fruit1 = arr[0].name;*/
 
 // Destructuring Assignment / Objetos
 
-let [{ name: fruitName }] = arr;
+/*let [{ name: fruitName }] = arr;*/
 
 // Functions
 
@@ -268,8 +268,8 @@ console.log(sum([5,5]));*/
     return a + b;
 }*/
 
-function sum({a, b}) {
+/*function sum({a, b}) {
     return a + b;
 }
 
-console.log(sum({ a: 5, b: 5}));
+console.log(sum({ a: 5, b: 5}));*/
