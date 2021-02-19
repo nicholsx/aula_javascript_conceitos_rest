@@ -1,6 +1,6 @@
 //********Symbols ********** // Maneira de gerar um identificar unico, não pode ser invocado utilizando new.
 //Somente como uma function, um symbol nunca é igual a outro. 
-// Identificador unico, que não pode advinhado
+// Identificador unico, que não pode ser advinhado
 // Pode ser utilizado para criar propriedades privadas
 
 /*const uniqueId = Symbol('Hello');*/
